@@ -1,0 +1,30 @@
+header{
+    background-color: aqua;
+}
+.hero{
+
+    background-color: aquamarine;
+}
+.aboutme{
+
+    background-color: antiquewhite;
+}
+.whatWeDo{
+    background-color: lightcoral;
+}
+
+.featured{
+    background-color: lightskyblue;
+}
+
+.joinMailing{
+
+    background-color: lightgoldenrodyellow
+}
+.tutorials{
+    background-color: lightpink
+}
+
+footer{
+    background-color: lightseagreen;
+}
