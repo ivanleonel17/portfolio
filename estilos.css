@@ -1,28 +1,87 @@
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+img{
+    width: 25%;
+}
+
 header{
     background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
 }
 .hero{
 
     background-color: aquamarine;
+    display: flex;
 }
 .aboutme{
 
     background-color: antiquewhite;
+    display: flex;
 }
 .whatWeDo{
     background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+}
+
+.whatWeDo .contenedorOurServices{
+    display: flex;
 }
 
 .featured{
     background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    
+}
+.featured .cabFeatured{
+    display: flex;
+    justify-content: space-evenly;
+}
+.featured .contenedorFeatured{
+
+    display: flex;
+
 }
 
 .joinMailing{
 
-    background-color: lightgoldenrodyellow
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    
 }
 .tutorials{
-    background-color: lightpink
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+
+}
+.tutorials .cabTutorials{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tutorials .contenedorTutorials{
+    display: flex;
+}
+.tutorials .contenedorTutorials .imgFondo{
+
+    background-image: url(/img/undraw_programming_re_kg9v.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer{
