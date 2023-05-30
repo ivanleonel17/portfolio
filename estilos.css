@@ -8,6 +8,7 @@
     margin: 0;
 
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -61,7 +62,7 @@ header button{
 }
 .hero h1{
     font-family: 'Poppins', sans-serif;
-    font-size: 4.5rem;
+    font-size: 4.3rem;
 }
 .hero h1 .subrayado {
     text-decoration: underline;
@@ -85,15 +86,71 @@ header button{
     background-color: antiquewhite;
     display: flex;
 }
+
+.aboutme .aboutmeTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+}
+
+.aboutme .aboutmeTexto h1{
+
+    font-size: 3rem;
+    /* font-weight: 700; */
+}
+
+
+.aboutme .aboutmeTexto p{
+
+font-size: 1.5rem;
+
+}
+
+.aboutme .aboutmeTexto button{
+    background-color:transparent;
+    border:3px solid black;
+    color:black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 1.2rem;
+    padding: 0.938rem 2rem; 
+    cursor:pointer;
+}
 .whatWeDo{
     background-color: lightcoral;
     display: flex;
     flex-direction: column;
 }
 
+.whatWeDo .prTitulo{
+    font-size: 1.8rem;
+}
+.whatWeDo .seTitulo{
+    font-size: 3rem;
+}
+
 .whatWeDo .contenedorOurServices{
     display: flex;
 }
+.whatWeDo .contenedorOurServices .services h2{
+    font-size: 2rem;
+}
+.whatWeDo .contenedorOurServices .services p{
+    font-size: 1.5rem;
+}
+.whatWeDo .contenedorOurServices .services button{
+    background-color:transparent;
+    border:3px solid black;
+    color:black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem; 
+    cursor:pointer;
+}
+
 
 .featured{
     background-color: lightskyblue;
@@ -104,10 +161,39 @@ header button{
 .featured .cabFeatured{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.featured .cabFeatured h1{
+    font-size: 3rem;
+}
+.featured .cabFeatured .alinearpyb{
+    display: flex;
+    align-items: center;
+}
+.featured .cabFeatured p{
+    font-size: 1rem;
 }
 .featured .contenedorFeatured{
 
     display: flex;
+
+}
+.featured .contenedorFeatured .trabajos h3{
+
+}
+.featured .contenedorFeatured .trabajos p {
+    font-size: 1.8rem;
+}
+.featured .contenedorFeatured .trabajos button{
+    background-color:transparent;
+    border:3px solid black;
+    color:black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem; 
+    cursor:pointer;
 
 }
 .featured img{
@@ -118,7 +204,46 @@ header button{
 
     background-color: lightgoldenrodyellow;
     display: flex;
+    justify-content:center ;
+    align-items: center;
     
+}
+.joinMailing .JoinTheMailing{
+    display: ;
+}
+.joinMailing .JoinTheMailing h1{
+    font-size: 3rem;
+}
+
+.joinMailing .JoinTheMailing p{
+    font-size: 1.5rem;
+}
+.joinMailing .JoinTheMailing form{
+    display: flex;
+}
+
+.joinMailing .JoinTheMailing input{
+    background-color:transparent;
+    border:3px solid black;
+    color:black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem; 
+    width: 40%;
+}
+
+.joinMailing .JoinTheMailing button{
+    background-color:#00494e;
+    color: #feffff;
+    padding: 0.938rem 2rem;
+    border-radius:0.625rem;
+    font-size:1rem;
+    text-align: center;
+    border: hidden; 
+    cursor:pointer;
+    width: 9.375rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .tutorials{
     background-color: lightpink;
