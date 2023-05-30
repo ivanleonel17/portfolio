@@ -200,72 +200,8 @@ font-size: 1.5rem;
     width: 25%;
 }
 
-.joinMailing{
-
-    background-color: lightgoldenrodyellow;
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    
-}
-.joinMailing .JoinTheMailing{
-    display: ;
-}
-.joinMailing .JoinTheMailing h1{
-    font-size: 3rem;
-}
-
-.joinMailing .JoinTheMailing p{
-    font-size: 1.5rem;
-}
-.joinMailing .JoinTheMailing form{
-    display: flex;
-}
-
-.joinMailing .JoinTheMailing input{
-    background-color:transparent;
-    border:3px solid black;
-    color:black;
-    text-decoration: none;
-    font-size: 1.5rem;
-    border-radius: 1rem;
-    padding: 0.5rem 1rem; 
-    width: 40%;
-}
-
-.joinMailing .JoinTheMailing button{
-    background-color:#00494e;
-    color: #feffff;
-    padding: 0.938rem 2rem;
-    border-radius:0.625rem;
-    font-size:1rem;
-    text-align: center;
-    border: hidden; 
-    cursor:pointer;
-    width: 9.375rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.tutorials{
-    background-color: lightpink;
-    display: flex;
-    flex-direction: column;
-
-}
-.tutorials .cabTutorials{
-    display: flex;
-    justify-content: space-evenly;
-}
-.tutorials .contenedorTutorials{
-    display: flex;
-}
-.tutorials .contenedorTutorials .imgFondo{
-
-    background-image: url(/img/undraw_programming_re_kg9v.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 footer{
     background-color: lightseagreen;
+    display: flex;
 }
