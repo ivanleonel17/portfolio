@@ -21,7 +21,7 @@ img{
     /* width: 25%; */
 }
 
-header{
+/* header{
     background-color: aqua;
     display: flex;
     justify-content: space-around;
@@ -51,7 +51,78 @@ header button{
     border: hidden; 
     cursor:pointer;
     width: 9.375rem;
-}
+} */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    height: 5rem;
+  }
+  
+  .logo img {
+    max-height: 40px;
+  }
+  
+  .menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2rem;
+  }
+  
+  .contact-btn {
+    background-color:#00494e;
+    color: #feffff;
+    padding: 0.938rem 2rem;
+    border: ;
+    border-radius:0.625rem;
+    font-size:1rem;
+    text-align: center;
+    border: hidden; 
+    cursor:pointer;
+    width: 9.375rem;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+    margin-bottom: 2.7rem;
+  }
+  
+  .hamburger {
+    width: 30px;
+    height: 3px;
+    /* background-color: #333; */
+    margin: 5px 0;
+    font-size: 3rem;
+    
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
 .hero{
 
     background-color: aquamarine;
@@ -80,6 +151,10 @@ header button{
     cursor:pointer;
     width: 9.375rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero .imagenAnimada img{
+    width: 50%;
 }
 .aboutme{
 
