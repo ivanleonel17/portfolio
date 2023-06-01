@@ -6,6 +6,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 
 }
 
@@ -17,43 +18,8 @@ a {
 li{
     list-style-type: none;
 }
-img{
-    /* width: 25%; */
-}
 
-/* header{
-    background-color: aqua;
-    display: flex;
-    justify-content: space-around;
-    height: 5rem;
-    align-items: center;
-    
-}
-
-header nav{
-    margin-right: 10 rem;
-}
-header a {
-    font-family: 'Poppins', sans-serif;
-    margin-left: 2rem;
-    
-}
-
-header button{
-
-    background-color:#00494e;
-    color: #feffff;
-    padding: 0.938rem 2rem;
-    border: ;
-    border-radius:0.625rem;
-    font-size:1rem;
-    text-align: center;
-    border: hidden; 
-    cursor:pointer;
-    width: 9.375rem;
-} */
-
-.container {
+.containerHeader {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -76,9 +42,7 @@ header button{
     margin-right: 20px;
   }
   
-  .menu li:last-child {
-    margin-right: 0;
-  }
+
   
   .menu li a {
     text-decoration: none;
@@ -123,78 +87,110 @@ header button{
       display: block;
     }
   }
-.hero{
 
-    background-color: aquamarine;
+/* SECTION HERO */
+.hero{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 80vh;
 }
-.hero h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 4.3rem;
+
+.wordpress {
+  flex-basis: 50%;
+  padding: 20px;
 }
-.hero h1 .subrayado {
-    text-decoration: underline;
-    line-height:
+
+.wordpress h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.3rem;
+  color: #000;
+  /* max-width: 50%; */
+}
+
+.wordpress .subrayado {
+  text-decoration: underline;
+  color: #00494e;
+}
+
+.wordpress .punto {
+  color: #91F2BB;
+}
+
+.hire-btn {
+  background-color: #00494e;
+  color: #feffff;
+  padding: 0.938rem 2rem;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  text-align: center;
+  border: hidden;
+  cursor: pointer;
+  width: 9.375rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.imagenAnimada {
+  flex-basis: 50%;
+}
+
+.imagenAnimada img {
+  max-width: 50%;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .imagenAnimada {
+    display: none;
   }
-
-.hero button{
-    background-color:#00494e;
-    color: #feffff;
-    padding: 0.938rem 2rem;
-    border-radius:0.625rem;
-    font-size:1rem;
-    text-align: center;
-    border: hidden; 
-    cursor:pointer;
-    width: 9.375rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.hero .imagenAnimada img{
-    width: 50%;
+/* SECTION ABOUT ME */
+.aboutme {
+  background-color:#E3FDF7;
+  display: flex;
 }
-.aboutme{
-
-    background-color: antiquewhite;
-    display: flex;
-}
-
-.aboutme .aboutmeTexto{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    
+.aboutme img{
+  flex-basis: 50%;
+  max-width: 50%;
 }
 
-.aboutme .aboutmeTexto h1{
-
-    font-size: 3rem;
-    /* font-weight: 700; */
+.aboutme .aboutmeTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  flex-basis: 50%;
 }
 
-
-.aboutme .aboutmeTexto p{
-
-font-size: 1.5rem;
-
+.aboutme .aboutmeTexto h1 {
+  font-size: 3rem;
 }
 
-.aboutme .aboutmeTexto button{
-    background-color:transparent;
-    border:3px solid black;
-    color:black;
-    text-decoration: none;
-    font-size: 1.5rem;
-    border-radius: 1.2rem;
-    padding: 0.938rem 2rem; 
-    cursor:pointer;
+.aboutme .aboutmeTexto p {
+  font-size: 1.5rem;
 }
-.whatWeDo{
-    background-color: lightcoral;
+
+.aboutme .aboutmeTexto button {
+  background-color: transparent;
+  border: 3px solid black;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 1.2rem;
+  padding: 0.938rem 2rem;
+  cursor: pointer;
+}
+
+/* Media query */
+
+@media (max-width: 768px) {
+  .aboutme img {
+    display: none;
+  }
+}
+/* .whatWeDo{
     display: flex;
     flex-direction: column;
 }
@@ -208,6 +204,11 @@ font-size: 1.5rem;
 
 .whatWeDo .contenedorOurServices{
     display: flex;
+}
+
+.whatWeDo .contenedorOurServices .services{
+background-color:#E3FDF7 ;
+
 }
 .whatWeDo .contenedorOurServices .services h2{
     font-size: 2rem;
@@ -224,8 +225,63 @@ font-size: 1.5rem;
     border-radius: 1rem;
     padding: 0.5rem 1rem; 
     cursor:pointer;
+} */
+.whatWeDo .prTitulo {
+  margin-left: 50px;
+}
+.whatWeDo .seTitulo {
+  margin-left: 50px;
 }
 
+.contenedorOurServices {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services {
+  width: 20%;
+  padding: 20px;
+  background-color: #E3FDF7;
+  border-radius: 10px;
+}
+
+.services img {
+  width: 100px;
+  height: 100px;
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.services p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.services button {
+  background-color: transparent;
+  border: 2px solid #00494e;
+  color: #00494e;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Media query */
+
+@media (max-width: 768px) {
+  .contenedorOurServices {
+    flex-direction: column;
+  }
+
+  .services {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
 .featured{
     background-color: lightskyblue;
