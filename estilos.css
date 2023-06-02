@@ -310,6 +310,10 @@ background-color:#E3FDF7 ;
     display: flex;
 
 }
+
+.featured .contenedorFeatured .trabajos img{
+width: 60%;
+}
 .featured .contenedorFeatured .trabajos h3{
 
 }
@@ -381,7 +385,42 @@ background-color:#E3FDF7 ;
 
 
 
-footer{
-    background-color: lightseagreen;
-    display: flex;
-}
+      footer {
+        background-color: #00494e;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      footer .logoynav img {
+        width: 3rem;
+      }
+      
+      footer nav ul {
+        margin-top: 30px;
+        padding-left: 0;
+        list-style: none;
+      }
+      
+      footer nav ul li {
+        margin-bottom: 10px;
+      }
+      
+      footer nav ul li a {
+        color: #ffffff;
+      }
+      
+      footer .infoFooter {
+        /* width: 70%; */
+      }
+      
+      footer .infoFooter h2 {
+        color: #ffffff;
+      }
+      
+      footer .infoFooter a {
+        color: white;
+      }
+      
+      footer .infoFooter p {
+        color: white;
+      }
