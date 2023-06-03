@@ -179,12 +179,12 @@ li{
 
 .aboutme .aboutmeTexto h1 {
   font-size: 3rem;
-  margin-bottom: 10px; /* Espaciado inferior para el H1 */
+  margin-bottom: 10px; 
 }
 
 .aboutme .aboutmeTexto p {
   font-size: 1.5rem;
-  margin-bottom: 20px; /* Espaciado inferior para el párrafo */
+  margin-bottom: 20px; 
 }
 
 .aboutme .aboutmeTexto button {
@@ -196,7 +196,7 @@ li{
   border-radius: 1.2rem;
   padding: 0.938rem 2rem;
   cursor: pointer;
-  margin-top: 20px; /* Espaciado superior para el botón */
+  margin-top: 20px; 
 }
 
 /* Media query */
@@ -205,6 +205,13 @@ li{
   .aboutme img {
     display: none;
   }
+  
+  .aboutme .aboutmeTexto {
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    flex-basis: 100%;
+  }
 }
 
 
@@ -212,8 +219,8 @@ li{
 .contenedorOurServices {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alinea las imágenes a la izquierda */
-  margin: 0 50px; /* Ajusta los márgenes laterales */
+  align-items: flex-start; 
+  margin: 0 50px; 
 }
 
 
@@ -229,11 +236,11 @@ li{
   margin: 0;
 }
 .services {
-  width: 30%; /* Ajusta el ancho de los servicios */
+  width: 30%; 
   padding: 20px;
   background-color: #E3FDF7;
   border-radius: 10px;
-  margin-bottom: 20px; /* Ajusta el espacio entre los servicios */
+  margin-bottom: 20px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -242,12 +249,12 @@ li{
 .services img {
   width: 100px;
   height: 100px;
-  margin-right: 10px; /* Espacio adicional a la derecha de la imagen */
+  margin-right: 10px; 
 }
 
 .services h2 {
   font-size: 24px;
-  margin-top: 0; /* Elimina el margen superior */
+  margin-top: 0; 
 }
 
 .services p {
