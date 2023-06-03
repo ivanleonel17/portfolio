@@ -284,56 +284,81 @@ li{
   }
 }
 
-.featured{
-    background-color: lightskyblue;
-    display: flex;
-    flex-direction: column;
-    
-}
-.featured .cabFeatured{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+
+.featured {
+  background-color: ;
+  display: flex;
+  flex-direction: column;
 }
 
-.featured .cabFeatured h1{
-    font-size: 3rem;
-}
-.featured .cabFeatured .alinearpyb{
-    display: flex;
-    align-items: center;
-}
-.featured .cabFeatured p{
-    font-size: 1rem;
-}
-.featured .contenedorFeatured{
-
-    display: flex;
-
+.featured .cabFeatured {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem; /* Margen inferior para separar de los trabajos */
 }
 
-.featured .contenedorFeatured .trabajos img{
-width: 60%;
+.featured .cabFeatured h1 {
+  font-size: 3rem;
+  margin-right: 1rem; /* Margen derecho para separar del primer trabajo */
+  margin: 0 45px;
 }
-.featured .contenedorFeatured .trabajos h3{
 
+.featured .cabFeatured .alinearpyb {
+  display: flex;
+  align-items: center;
+  
 }
+
+.featured .cabFeatured p {
+  font-size: 1rem;
+}
+
+.featured .contenedorFeatured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0 45px; 
+}
+
+.featured .contenedorFeatured .trabajos {
+  flex-basis: 30%;
+  text-align: center;
+  margin-bottom: 2rem; /* Margen inferior estético */
+  
+  
+}
+
+.featured .contenedorFeatured .trabajos img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.featured .contenedorFeatured .trabajos h3 {
+  font-size: 2rem;
+}
+
 .featured .contenedorFeatured .trabajos p {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
-.featured .contenedorFeatured .trabajos button{
-    background-color:transparent;
-    border:3px solid black;
-    color:black;
-    text-decoration: none;
-    font-size: 1.5rem;
-    border-radius: 1rem;
-    padding: 0.5rem 1rem; 
-    cursor:pointer;
 
+.featured .contenedorFeatured .trabajos button {
+  background-color: transparent;
+  border: 3px solid black;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
-.featured img{
-    width: 25%;
+
+@media (max-width: 768px) {
+  .featured .contenedorFeatured .trabajos {
+    flex-basis: 100%;
+  }
 }
 
     .formulario {
