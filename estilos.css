@@ -1,6 +1,8 @@
-/* Letra Navy  H1 Hero */
+/* Letra   H1 Hero */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
-/* font-family: 'Poppins', sans-serif;  H1 Hero*/ 
+/* Letra NAV */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 
 
 *{
@@ -9,8 +11,17 @@
     box-sizing: border-box;
 
 }
+body{padding-top: 6rem;}
+
 header{
-  margin-right:;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 999;
+  
 }
 section:not(.excepcion) {
   margin: 0px 3%;
@@ -34,11 +45,11 @@ li{
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
-    height: 5rem;
+    /* height: 2rem; */
   }
   
   .logo img {
-    max-height: 40px;
+    max-height: 50px;
   }
   
   .menu {
@@ -50,27 +61,33 @@ li{
   
   .menu li {
     margin-right: 20px;
+    
   }
   
-
+  
   
   .menu li a {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin-left: 2rem;
+    font-size: 20px;
+    color:#262626;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+    display: inline-block;
   }
   
   .contact-btn {
     background-color:#00494e;
     color: #feffff;
-    padding: 0.938rem 2rem;
-    border: ;
+    padding: 1.5rem 3.5rem;
+    border: none;
     border-radius:0.625rem;
-    font-size:1rem;
+    font-size:1.2rem;
     text-align: center;
     border: hidden; 
     cursor:pointer;
-    width: 9.375rem;
+    
   }
   
   .mobile-menu {
@@ -87,14 +104,58 @@ li{
     font-size: 3rem;
     
   }
+
+  /* HOOVER */
+
+ 
+  nav a:hover {
+    color: #00494e;
+    transform: scale(1.2);
+    
+    
+  }
+  
+  .contact-btn {
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-btn:hover {
+    background-color: #002f32;
+    color: #ffffff;
+  }
+  
+  .contact-btn:active {
+    background-color: #00494e;
+    color: #ffffff;
+  }
   
   @media (max-width: 768px) {
+    header {
+      position: static;
+    }
+  
     .menu {
       display: none;
     }
   
     .mobile-menu {
       display: block;
+    }
+
+    body{padding-top: 0rem}
+
+    .contact-btn {
+      background-color:#00494e;
+      color: #feffff;
+      padding: 0.938rem 2rem;
+      border: ;
+      border-radius:0.625rem;
+      font-size:1rem;
+      text-align: center;
+      border: hidden; 
+      cursor:pointer;
+      width: 9.375rem;
+      margin-right: 10%;
     }
   }
 
@@ -106,11 +167,12 @@ li{
   justify-content: space-evenly;
   align-items: center;
   height: 80vh;
+  margin-top: 5rem;
+
 }
 
 .wordpress {
   flex-basis: 50%;
-  padding: 20px;
 }
 
 .wordpress h1 {
@@ -126,6 +188,10 @@ li{
 
 .wordpress .punto {
   color: #91F2BB;
+}
+
+.wordpress .colorNegro{
+  color: black;
 }
 
 .hire-btn {
@@ -147,6 +213,21 @@ li{
 
 .imagenAnimada img {
   max-width: 100%;
+}
+
+/* HOOVER */
+
+.hire-btn {
+  transition: background-color 0.3s ease;
+}
+.hire-btn:hover {
+  background-color: #002f32;
+  color: #ffffff;
+}
+
+.hire-btn:active {
+  background-color: #00494e;
+  color: #ffffff;
 }
 
 /* Media query para dispositivos móviles */
@@ -220,10 +301,16 @@ li{
   border-radius: 1.2rem;
   padding: 0.938rem 2rem;
   cursor: pointer;
+  transition: background-color 0.5s ease;
 
   
 }
 
+/* HOOVER */
+.aboutme .aboutmeTexto button:hover {
+  background-color: #00494e;
+  color: #ffffff;
+}
 /* Media query */
 
 @media (max-width: 768px) {
@@ -237,17 +324,34 @@ li{
     margin-left: 0;
     flex-basis: 100%;
   }
+  .aboutme .aboutmeTexto h1{
+    margin-top: 1rem;
+    
+  }
+
+  .aboutme .aboutmeTexto p{
+      }
+
 
   .aboutme .aboutmeTexto button {
     background-color: transparent;
     border: 3px solid black;
     color: black;
     font-weight:bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 1.2rem;
     padding: 0.938rem 2rem;
     cursor: pointer;
-    margin-top: 20px;
+    margin-bottom: 1rem;
+    
+  }
+  .aboutme .aboutmeTexto h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .aboutme .aboutmeTexto p {
+    font-size: 1.2rem;
+    margin: 10px 40px;
     
   }
 }
@@ -311,12 +415,34 @@ li{
   background-color: transparent;
   border: 2px solid #00494e;
   color: #00494e;
-  padding: 15px 15px;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px;
-  width: 60%; /* Ajusta el ancho del botón al 50% */
-  font-weight: bold; /* Aplica negrita al texto del botón */
+  margin-top: 20px; 
+  font-weight: bold; 
+  font-size: 12px;
+  transition: background-color 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0.5; 
+  flex-shrink: 0;
+  width: 63%;
+}
+
+.arrow{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  margin-bottom: 0.4rem;
+  vertical-align: middle; 
+  
+}
+
+/* HOOVER */
+.services button:hover {
+  background-color: #00494e;
+  color: #ffffff;
 }
 /* Media query */
 
@@ -329,8 +455,48 @@ li{
     width: 100%;
     margin-bottom: 20px;
   }
+
+  .services h2 {
+    font-size: 1.6rem;
+    margin-top: 0; 
+  }
+  
+  .services p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .services img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; 
+  }
+
+  .services button.custom-button {
+    background-color: transparent;
+    border: 2px solid #00494e;
+    color: #00494e;
+    padding: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 60%; /* Ajusta el ancho del botón al 50% */
+    font-weight: bold; /* Aplica negrita al texto del botón */
+    font-size: 14px;
 }
 
+/* SECCION PROYECTOS */
+
+.prTitulo{
+  font-size: 1.4rem;
+}
+
+.seTitulo {
+  margin: 0;
+  font-size: 2.0rem;
+}
+
+}
 
 .featured {
   display: flex;
@@ -355,6 +521,8 @@ li{
   font-size: 80px;
   background-color: transparent;
   border: transparent;
+  cursor: pointer;
+  
 }
 
 .featured .cabFeatured .alinearpyb {
@@ -409,13 +577,56 @@ li{
   padding: 0.5rem 1rem;
   cursor: pointer;
   margin-top: 1rem;
+  transition: transform 0.3s ease;
 }
+
+.featured .cabFeatured p {
+  font-size: 1.4rem;
+  font-weight: bold;
+   
+
+}
+/* HOOVER */
+
+.featured .flecha i {
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+  display: block
+}
+
+.featured .flecha i:hover {
+  color: #00494e;
+  background-color: white;
+  transform: scale(1.2);
+  
+}
+.featured .contenedorFeatured .trabajos button:hover{
+  transform: scale(1.2);
+}
+
 
 @media (max-width: 768px) {
   .featured .contenedorFeatured .trabajos {
     flex-basis: 100%;
   }
+  .featured .cabFeatured h1 {
+    font-size: 1.8rem;
+    margin-left: 2.5rem; 
+  
+  }
+
+  .featured .cabFeatured p {
+    display: none;
+      
+   
+   }
+     
+     .featured .cabFeatured .flecha{
+      display: none;
+   }
+
 }
+
 
          /* FORMULARIO*/
       .formulario {
@@ -434,17 +645,14 @@ li{
         font-size: 48px;
         margin-bottom: 20px;
     }
+
+   
     
     .form-container form {
         display: flex;
         flex-direction: column;
     }
     
-
-    /* .form-container input::placeholder,
-    .form-container textarea::placeholder {
-        background-color: #E3FDF7;
-    } */
 
 
     .form-container input, textarea{
@@ -457,20 +665,22 @@ li{
     
     .input-container label {
         display: block;
-        font-size: 18px;
+        font-size: 25px;
         font-weight: bold;
         margin-bottom: 5px;
+        
     }
     
     .input-container input,
     .input-container textarea {
-        padding: 10px;
+        padding: 10px 40px;
         border-radius: 4px;
         border: 2px solid #ccc;
         font-size: 16px;
         border-color: #00494e;
     }
-    
+
+   
     .form-container button {
         background-color: #00494e;
         color: white;
@@ -479,6 +689,19 @@ li{
         cursor: pointer;
         border-radius: 4px;
         font-size: 16px;
+        transition: color 0.3s ease;
+      
+    }
+
+    /* HOOVER */
+    .form-container button:hover{
+      background-color: #002f32;
+      color: #ffffff;
+    }
+
+    .form-container button:active{
+      background-color: #00494e;
+      color: #ffffff;
     }
     
     .image-container {
@@ -564,7 +787,7 @@ li{
       .logoynav nav ul li a {
         color: white;
         text-decoration: none;
-        font-size: 28px;
+        font-size: 20px;
       }
       
       .infoFooter {
@@ -576,13 +799,14 @@ li{
       }
       
       .infoFooter h2 {
-        font-size: 50px; /* Tamaño de letra grande */
+        font-size: 40px; /* Tamaño de letra grande */
         margin-bottom: 10px;
       }
       
       .infoFooter a {
         color: white;
         text-decoration: none;
+        
       }
       
       .infoFooter p {
@@ -600,7 +824,7 @@ li{
       .infoFooter .marginDerecha{
         margin-top:10%;
         margin-left: 25%;
-        font-size: 20px;
+        font-size: 15px;
       }
       
       .infoFooter .social-links {
@@ -609,7 +833,7 @@ li{
       
       .infoFooter .social-links a {
         margin-right: 10px;
-        font-size: 46px;
+        font-size: 36px;
       }
 
       @media (max-width: 768px) {
@@ -625,6 +849,7 @@ li{
           color: white;
           text-decoration: none;
           font-size:18px;
+          transition: transform 0.3s ease;
         }
 
         .infoFooter .social-links a {
@@ -637,4 +862,10 @@ li{
         }
 
 
+      }
+
+      /* HOOVER */
+
+      footer nav ul li:hover {
+        transform: scale(1.2);
       }
