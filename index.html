@@ -39,7 +39,7 @@
                     <h1>Programador
                         <span class="subrayado">Full stack&</span> 
                          <br>Consultor Sap<span class="punto">.</span></br></h1> 
-                    <button class="hire-btn">Hire Me</button>
+                    <button class="hire-btn">Contratame</button>
               </div>
 
               <div class="imagenAnimada">
@@ -134,28 +134,33 @@
                 </section>
 
 
-               <section class="formulario">
-
-                <div class="form-container">
+                <section class="formulario">
+                  <div class="form-container">
                     <h2>Contacto</h2>
                     <form>
-                    <label>Nombre</label>
-                      <input type="text" placeholder="Juan Perez" required>
-                      <label>Email</label>
-                      <input type="email" placeholder="ejemplo@gmail.com" required>
-                      <label>Numero de telefono</label>
-                      <input type="tel" placeholder="1130201187" required>
-                      <label>Mensaje</label>
-                      <textarea placeholder="Escriba su necesid" required></textarea>
+                      <div class="input-container">
+                        <label for="nombre"><i class="bi bi-person-vcard"></i> Nombre</label>
+                        <input type="text" id="nombre" placeholder="Juan Perez" required>
+                      </div>
+                      <div class="input-container">
+                        <label for="email"><i class="bi bi-envelope-at"></i> Email</label>
+                        <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+                      </div>
+                      <div class="input-container">
+                        <label for="telefono"><i class="bi bi-phone"></i> Número de teléfono</label>
+                        <input type="tel" id="telefono" placeholder="1130201187" required>
+                      </div>
+                      <div class="input-container">
+                        <label for="mensaje"><i class="bi bi-chat-square"></i> Mensaje</label>
+                        <textarea id="mensaje" placeholder="Escriba su necesidad" required></textarea>
+                      </div>
                       <button type="submit">Enviar</button>
                     </form>
                   </div>
                   <div class="image-container">
                     <img src="img/contacto.svg" alt="Imagen">
                   </div>
-
-
-               </section>
+                </section>
 
 
                

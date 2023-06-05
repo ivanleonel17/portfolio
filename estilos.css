@@ -383,94 +383,111 @@ li{
   }
 }
 
-    .formulario {
+         /* FORMULARIO*/
+      .formulario {
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: center;
-        
-      }
-      
-      .form-container {
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: space-between; /* Espacio entre los elementos */
+    }
+    
+    .form-container {
         flex-basis: 50%;
         padding: 20px;
-      }
-      
-      .form-container h2 {
         text-align: center;
-      }
-      
-      .form-container form {
+    }
+    
+    .form-container h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    
+    .form-container form {
         display: flex;
         flex-direction: column;
-      }
-      
-      .form-container input,
-      .form-container textarea {
-        margin-bottom: 10px;
+    }
+    
+    .form-container input::placeholder,
+    .form-container textarea::placeholder {
+        background-color: #E3FDF7;
+    }
+    
+    .input-container {
+        margin-bottom: 20px;
+    }
+    
+    .input-container label {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .input-container input,
+    .input-container textarea {
         padding: 10px;
-      }
-      
-      .form-container button {
-        background-color: #4CAF50;
+        border-radius: 4px;
+        border: 2px solid #ccc;
+        font-size: 16px;
+        border-color: #00494e;
+    }
+    
+    .form-container button {
+        background-color: #00494e;
         color: white;
-        padding: 10px;
+        padding: 10px 20px;
         border: none;
         cursor: pointer;
-      }
-      
-      .image-container {
-        flex-basis: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .image-container img {
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    .image-container {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start; /* Alinear verticalmente arriba */
+      padding-right: 20px;
+    }
+    
+    .image-container img {
         max-width: 100%;
         max-height: 100%;
-      }
-
-
-
-      /* footer {
-        background-color: #00494e;
-        display: flex;
-        justify-content: space-between;
-      }
-      
-      footer .logoynav img {
-        width: 3rem;
-      }
-      
-      footer nav ul {
-        margin-top: 30px;
-        padding-left: 0;
-        list-style: none;
-      }
-      
-      footer nav ul li {
-        margin-bottom: 10px;
-      }
-      
-      footer nav ul li a {
-        color: #ffffff;
-      }
-      
-      
-      
-      footer .infoFooter h2 {
-        color: #ffffff;
-      }
-      
-      footer .infoFooter a {
-        color: white;
-      }
-      
-      footer .infoFooter p {
-        color: white;
-      } */
-
+    }
+    
+    @media screen and (max-width: 768px) {
+        .formulario {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .image-container {
+            display: none;
+        }
+    
+        .form-container {
+            flex-basis: 100%;
+        }
+    
+        .form-container form {
+            max-width: 300px; /* Ancho máximo del formulario */
+            margin: 0 auto; /* Centrar el formulario horizontalmente */
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .form-container input,
+        .form-container textarea {
+            padding: 8px;
+            font-size: 14px;
+        }
+    
+        .form-container button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+                  /* FOOTER */
+     
       footer {
         display: flex;
         flex-wrap: wrap;
