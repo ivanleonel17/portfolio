@@ -17,10 +17,10 @@
                 <nav>
                   <ul class="menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">SobreMi</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#aboutme">SobreMi</a></li>
+                    <li><a href="#whatWeDo">Servicios</a></li>
+                    <li><a href="#featured">Proyectos</a></li>
+                    <li><a href="#formulario">Contacto</a></li>
                   </ul>
                 </nav>
                 <button class="contact-btn">Contactame</button>
@@ -34,7 +34,7 @@
     
         <!-- SPONSORS NO VAN -->
     <main>
-            <section class="hero">
+            <section class="hero" id="hero">
               <div class="wordpress">
                     <h1>Programador
                         <span class="subrayado">Full stack <span class="colorNegro">&</span></span> 
@@ -48,7 +48,7 @@
               </div>
               </section>
 
-            <section class="aboutme excepcion" >
+            <section id="aboutme" class="aboutme excepcion" >
 
                     <img src="img/imgAboutme.jpg" alt="">
                 
@@ -57,13 +57,16 @@
                     <p>Hola, mi nombre es Ivan Antonuccio, tengo 27 años y soy analista de sistemas. Mi especialidad se centra en la consultoría SAP y el desarrollo de aplicaciones Full Stack.</p>
                     <p> Mi experiencia como consultor SAP me ha permitido colaborar con empresas de diversos sectores, brindándoles asesoramiento  y adaptando el sistemas SAP a sus necesidades específicas. Además, como programador Full Stack, he desarrollado paginas web utilizando tecnologías modernas y frameworks populares.
                         </p>
-                    <button><i class="bi bi-linkedin"></i> Linkedin</button>
+                        <button class="social-button">
+                          <a href="https://www.linkedin.com/in/ivan-antonuccio-00170417b/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> Linkedin</a>
+                        </button>
+                        
                 </div>
 
 
             </section>
 
-            <section class="whatWeDo">
+            <section id=whatWeDo class="whatWeDo">
               <div class="titles-container">
               <h6 class="prTitulo">QUE HAGO</h6>
               <h1 class="seTitulo">MI SERVICIOS</h1>
@@ -99,7 +102,7 @@
 
                 </section>
 
-                <section class="featured">
+                <section id="featured" class="featured">
                         <div class="cabFeatured">
                             <h1>PROYECTOS DESTACADOS</h1>
                              <div class="alinearpyb">
@@ -133,7 +136,7 @@
                 </section>
 
 
-                <section class="formulario">
+                <section id="formulario" class="formulario">
                   <div class="form-container">
                     <h2>Contacto</h2>
                     <form>

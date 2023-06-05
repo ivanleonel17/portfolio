@@ -5,6 +5,7 @@
 
 
 
+
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +13,14 @@
 
 }
 body{padding-top: 6rem;}
+
+section {
+  scroll-margin-top: 150px; /* Ajusta el valor según sea necesario */
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 header{
   position: fixed;
