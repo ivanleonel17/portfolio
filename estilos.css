@@ -657,7 +657,10 @@ li{
 
     .form-container input, textarea{
       background-color: #E3FDF7;
+      
     }
+
+    
     
     .input-container {
         margin-bottom: 20px;
@@ -678,6 +681,7 @@ li{
         border: 2px solid #ccc;
         font-size: 16px;
         border-color: #00494e;
+        
     }
 
    
@@ -770,7 +774,7 @@ li{
       
       .logoynav img {
         width: 70px; /* Tamaño del logo */
-        margin-bottom: 40px;
+        margin-bottom: 15%;
         
       }
       
@@ -799,7 +803,7 @@ li{
       }
       
       .infoFooter h2 {
-        font-size: 40px; /* Tamaño de letra grande */
+        font-size: 50px; /* Tamaño de letra grande */
         margin-bottom: 10px;
       }
       
@@ -855,6 +859,7 @@ li{
         .infoFooter .social-links a {
           margin-right: 10px;
           font-size: 23px;
+          transition: transform 0.3s ease;
         } 
 
         .infoFooter .marginDerecha{
@@ -867,5 +872,10 @@ li{
       /* HOOVER */
 
       footer nav ul li:hover {
+        transform: scale(1.2);
+      }
+
+      .infoFooter .social-links a:hover{
+
         transform: scale(1.2);
       }
