@@ -518,13 +518,13 @@ li{
       }
       
       .logoynav nav ul li {
-        margin-bottom:15px;
+        margin-bottom:25px;
       }
       
       .logoynav nav ul li a {
         color: white;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 28px;
       }
       
       .infoFooter {
@@ -548,6 +548,10 @@ li{
       .infoFooter p {
         margin-top: 10px;
       }
+
+      .infoFooter .subrayado{
+        text-decoration: underline;
+      }
       .infoFooter .marginTop{
         margin-top:80px;
       }
@@ -563,4 +567,5 @@ li{
       
       .infoFooter .social-links a {
         margin-right: 10px;
+        font-size: 46px;
       }
