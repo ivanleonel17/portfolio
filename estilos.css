@@ -914,13 +914,31 @@ li{
 
       
           
-      @media (max-width: 768px) {
+      @media (max-width: 480px) {
         .infoFooter .marginDerecha{
-          font-size: 10px;
+          font-size: 8px;
           margin-top: 13rem;
-          margin-left: 5%;
+          margin-left: 6%;
+        }
+
+        .infoFooter h2 {
+          font-size: 15px;
+        }
+
+        .logoynav nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-size:12px;
+          transition: transform 0.3s ease;
         }
       
+        .logoynav img {
+          width: 40px; /* Tamaño del logo */
+          
+          
+        }
+
+        
       }
       
 
